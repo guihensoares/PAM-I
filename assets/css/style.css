@@ -1,9 +1,13 @@
+body {
+    background-color: dimgrey;
+}
+
 :root {
-    --primary-color: #8704BF;
-    --secondary-color: #04BFBF;
-    --tertiary-color: #270140;
-    --quaternary-color: #2E0259;
-    --quinary-color: #7503A6;
+    --primary-color: #32CD32;
+    --secondary-color: 	#228B22;
+    --tertiary-color: 	#2E8B57	;
+    --quaternary-color: #054d05	;
+    --quinary-color: #008000;
     --light-color: #f2f2f2;
     --medium-color: #898888;
     --dark-color: #141414;
