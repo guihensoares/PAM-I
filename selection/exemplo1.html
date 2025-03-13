@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="aumentarFonte()" style = "padding: 10px; background-color: aquamarine; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Aumentar Fonte</button>
+    <button onclick="reduzirFonte()" style = "padding: 10px; background-color: aquamarine; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Reduzir Fonte</button>
+    <button onclick="dizerOla()" style = "padding: 10px; background-color: aquamarine; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Diga Olá!</button>
+    <button onclick="aplicarEstilo()" style = "padding: 10px; background-color: aquamarine; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Aplicar Estilo </button>
+
+    <button onclick="aplicarCorBlue()" style = "padding: 10px; background-color: aquamarine; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Aplicar cor Blue</button>
+    <button onclick="aplicarCorRed()" style = "padding: 10px; background-color: aquamarine; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Aplicar cor Red</button>
+    <button onclick="aplicarCorVerde()" style = "padding: 10px; background-color: aquamarine; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Aplicar cor Green</button>
+
+    <button onclick="aumentarMargem()" style = "padding: 10px; background-color: aquamarine; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Aumentar Margens</button>
+    <button onclick="diminuirMargem()" style = "padding: 10px; background-color: aquamarine; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Diminuir Margens</button>
+    <h1>Etec Sales Gomes</h1>
+
+    <script>
+
+        let font_size = 62;
+        let titulo = document.querySelector('h1');
+        let margens = 100;
+
+        function aplicarCorRed() {
+            titulo.style.backgroundColor = 'red';
+        }
+
+        function aplicarCorBlue() {
+            titulo.style.backgroundColor = 'blue';
+        }
+
+        function aplicarCorVerde () {
+            titulo.style.backgroundColor = 'green'
+        }
+
+        function aumentarMargem() {
+            margens = margens + 10;
+            aplicarMargem();
+        }
+
+        function diminuirMargem() {
+            margens = margens - 10;
+            aplicarMargem();
+        }
+
+        function aplicarMargem() {
+            // titulo.style.margin = margens + 'px'
+            titulo.style.margin = `${margens}px`
+        }
+
+        function aumentarFonte() {
+            font_size++;
+            aplicarSize();
+        }
+
+        function reduzirFonte() {
+            font_size--;
+            aplicarSize();
+        }
+
+        function aplicarSize() {
+            // titulo.style.fontSize = font_size + 'px';
+            titulo.style.fontSize = `${font_size}px`
+        }
+
+        function dizerOla() {
+            alert("Olá!!!!!! :D");
+        }
+
+        function aplicarEstilo() {
+            let titulo = document.querySelector('h1');
+            titulo.style.backgroundColor = 'white';
+            titulo.style.fontSize = '64px';
+            titulo.style.fontFamily = 'Comic Sans MS';
+            titulo.style.marginTop = '100px';
+            titulo.style.textAlign = "center";
+            document.body.style.backgroundColor = 'purple';
+        }
+
+        
+
+       
+        console.log(titulo);
+1
+    </script>
+
+</body>
+</html>
