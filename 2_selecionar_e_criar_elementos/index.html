@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionar Elementos</title>
+</head>
+<body>
+
+    <button onclick="addVeiculo1()">Adicionar Fusca</button>
+    <button onclick="addVeiculo2()">Adicionar Ferrari</button>
+    <button onclick="addVeiculo3()">Adicionar Uno</button>
+    <button onclick="addVeiculo4()">Adicionar Avião</button>
+
+    <div id="estacionamento"></div>
+
+    <script>
+
+        function addVeiculo1() {
+        let veiculo_1 = document.createElement('h1');
+        veiculo_1.innerText = 'Fusca';
+        veiculo_1.style.color = 'purple';
+        veiculo_1.style.backgroundColor = 'orange';
+        veiculo_1.style.fontSize = '30px';
+        veiculo_1.style.fontFamily = 'Times New Roman';
+        veiculo_1.style.borderStyle = 'dotted ';
+
+        let imagem = document.createElement('img')
+        imagem.setAttribute('src', 'https://cdn.autopapo.com.br/box/uploads/2023/12/11161337/volkswagen-fusca-azul-foto-732x488.png')
+
+        document.querySelector('#estacionamento').appendChild(veiculo_1);
+        document.querySelector('#estacionamento').appendChild(imagem);
+        }
+
+        function addVeiculo2() {
+        let veiculo_2 = document.createElement('h1');
+        veiculo_2.innerText = 'Ferrari';
+        veiculo_2.style.color = 'red';
+        veiculo_2.style.backgroundColor = 'black';
+        veiculo_2.style.fontSize = '30px';
+        veiculo_2.style.fontFamily = 'Impact';
+        veiculo_2.style.borderStyle = 'dotted ';
+
+        let imagem = document.createElement('img');
+        imagem.setAttribute('src', 'https://cdn.autopapo.com.br/box/uploads/2022/09/29155036/8d0dd47c-ferrari-sp51-2022-1600-732x488.png');
+
+
+        document.querySelector('#estacionamento').appendChild(veiculo_2);
+        document.querySelector('#estacionamento').appendChild(imagem);
+
+        }
+
+        function addVeiculo3() {
+        let veiculo_3 = document.createElement('h1');
+        veiculo_3.innerText = 'Uno';
+        veiculo_3.style.color = 'brown';
+        veiculo_3.style.backgroundColor = 'gray';
+        veiculo_3.style.fontSize = '30px';
+        veiculo_3.style.fontFamily = 'Arial';
+        veiculo_3.style.borderStyle = 'dotted ';
+
+        let imagem = document.createElement('img');
+        imagem.setAttribute('src', 'https://cdn.autopapo.com.br/box/uploads/2021/07/21161926/fiat-uno-s-de-frente-foto-preta-e-branca-732x488.jpg');
+
+        document.querySelector('#estacionamento').appendChild(veiculo_3);
+        document.querySelector('#estacionamento').appendChild(imagem);
+        }
+
+        function addVeiculo4() {
+        let veiculo_4 = document.createElement('h1');
+        veiculo_4.innerText = 'Avião';
+        veiculo_4.style.color = 'green';
+        veiculo_4.style.backgroundColor = 'yellow';
+        veiculo_4.style.fontSize = '30px';
+        veiculo_4.style.fontFamily = 'Calibri';
+        veiculo_4.style.borderStyle = 'dotted ';
+
+        let imagem = document.createElement('img');
+        imagem.setAttribute('src', 'https://cdn.autopapo.com.br/box/uploads/2023/02/07180447/mitsubishi-spacejet-aviao-decolando-732x488.jpg');
+
+        document.querySelector('#estacionamento').appendChild(veiculo_4);
+        document.querySelector('#estacionamento').appendChild(imagem);
+        }
+
+        
+    </script>
+</body>
+</html>
