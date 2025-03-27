@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quarto dos Horrores</title>
+</head>
+<body>
+    
+    <img src="./interruptor_ligado.png" id="interruptor" onclick="acionarInterruptor()">
+    <img src="./lampada_ligada.png" id="lampada">
+    <img src="./creeper_luzLigado.gif" id="creeper">
+
+    <script>
+        let acionado = true;
+        function acionarInterruptor() {
+            let creeper = document.querySelector('#creeper');
+            let lampada = document.querySelector('#lampada');
+            let interruptor = document.querySelector('#interruptor');
+            let body = document.querySelector('body');
+
+            if (acionado == true) {
+                interruptor.setAttribute('src', './interruptor_desligado.png');
+                lampada.setAttribute('src', './lampada_desligada.png');
+                creeper.setAttribute('scr', './creeper_luzDesligado')
+                body.style.background = 'url(./creeper_luzDesligado.gif)';
+                body.style.backgroundColor = 'black';
+            } else {
+                interruptor.setAttribute('src', "./interruptor_ligado.png");
+                lampada.setAttribute('src', './lampada_ligada.png')
+                creeper.setAttribute('src', './creeperLuzLigado.gif')
+                body.style.backgroundColor = 'white';
+            }
+            acionado = !acionado;
+            
+        }
+        
+    </script>
+    
+</body>
+</html>
