@@ -1,0 +1,21 @@
+<script>
+
+    let numeros = [2, 6, 40, 20, -12, -7, 80, 12, -9, 10];
+    let positivos = 0;
+    let negativos = 0;  
+
+    numeros.forEach(function(numero) {
+
+        if(numero >= 0){
+            positivos++;
+ 
+        } else {
+            negativos++;
+
+        }
+        
+    });
+    
+    console.log(`Existe ${positivos} positivos e ${negativos} negativos.`);
+    
+</script>
