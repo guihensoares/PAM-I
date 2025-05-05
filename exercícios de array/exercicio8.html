@@ -1,31 +1,38 @@
 <script>
-    let personagem = [
-        personagem1 => [
-            nome => 'Peter Parker',
-            idade => 16,
-            peso => 58,
-            altura => 1.73,
-            poder => 'soltar teia',
-            profissao => 'fotografo',
-            img => 'https://i.pinimg.com/474x/2a/b6/62/2ab66269959ed2db1903bdd4f2347e18.jpg'
-        ],
-        [
-            nome => 'Bruce Wayne',
-            idade => 30,
-            peso => 80,
-            altura => 1.87,
-            poder => 'dinheiro',
-            profissao => 'empresário',
-            img => 'https://static.wikia.nocookie.net/hunger_games_simulator/images/d/d5/Brucewayne.png/revision/latest?cb=20210316131232'
-        ],
-        [
-            nome => 'Clark Kent',
-            idade => 30,
-            peso => 89,
-            altura => 1.90,
-            poder => 'voar',
-            profissao => 'jornalista',
-            img => 'https://user-images.prod.xoul-media.com/cdn-cgi/image/width=256,quality=75,format=webp/https://user-images.prod.xoul-media.com/images/279dc1c66fcb4276ae76e1510855ce59.jpg'
-        ],
-    ];
+    let escola = [];
+
+    escola['professores'] = [];
+    escola['materias'] = [];
+    escola['alunos'] = [];
+
+    escola['professores'] [0] = 'Diogo';
+    escola['professores'] [1] = 'Gabriel';
+
+    escola['materias'] [0] = 'Banco de Dados';
+    escola['materias'] [1] = 'Programação Web I';
+
+    escola['alunos'] [0] = 'Guilherme';
+    escola['alunos'] [1] = 'Leonardo';
+
+    escola['professores'].push('Felipe');
+    escola['materias'].push('Programação Mobile I');
+    escola['alunos'].push('Neor');
+
+    escola['professores'].forEach(elemento => {
+        console.log(elemento);
+        
+    });
+
+    console.log('');
+
+    escola['materias'].forEach(elemento => {
+        console.log(elemento);
+    });
+
+    console.log('');
+
+    escola['alunos'].forEach(elemento => {
+        console.log(elemento);
+    });
+
 </script>
