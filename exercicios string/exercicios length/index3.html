@@ -1,0 +1,18 @@
+<script>
+    let nome = prompt("Digite seu primeiro nome:");
+    let sobrenome = prompt("Digite seu sobrenome:");
+    nomeCompleto();
+
+    function nomeCompleto() {
+        if (nome.length >= 3 && sobrenome.length >= 3) {
+            console.log(nome);
+            console.log('');
+            console.log(sobrenome);
+            console.log('');
+            console.log(nome , sobrenome);
+
+        } else {
+            console.log('Poucos caracteres no nome/sobrenome');
+        }
+    }
+</script>
