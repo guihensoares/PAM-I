@@ -1,13 +1,11 @@
 <script>
-    let numero = prompt('Digite o seu número de telefone:');
-    consultarNum();
+    let numero = '15998654321';
 
-    function consultarNum() {
-        if (numero.length == 11) {
-            console.log(numero.split(""));
-            numero.forEach(elemento => {
-                elemento
-            });
+    numero = numero.split("");
+
+    numero.forEach(num => {
+        if (num.length == 11) {
+            console.log('valido!')
         }
-    }
+    });
 </script>

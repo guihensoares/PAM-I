@@ -1,0 +1,21 @@
+<script>
+    let string = 'hotel';
+    let tentativa = 3;
+
+    for (let jogo = 0; jogo < tentativa; jogo++) {
+
+        let caractere = prompt('Digite uma letra');
+        let letra = string.indexOf(caractere);
+        
+        if (letra == -1) {
+            alert('Essa letra não existe na palavra!');
+
+        } else {
+            alert('Essa letra existe na palavra!');
+
+        }
+    }
+
+    alert(`A Palavra era: ${string}`);
+
+</script>

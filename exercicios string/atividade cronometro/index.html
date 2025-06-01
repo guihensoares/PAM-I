@@ -1,0 +1,34 @@
+<button onclick="cronometro()">Cronômetrar</button>
+<button onclick="parar()">Parar de crônometrar</button>
+<script>
+    let milissegundos = 0;
+    let segundos = 0;
+    let minutos = 0;
+    let horas = 0;
+    let valor = 0;
+
+    function cronometro() {
+        valor = setInterval(() => {
+            milissegundos++;
+
+            if (milissegundos > 1000) {
+                segundos++;
+                milissegundos = 0;
+            }
+            if (segundos > 60) {
+                minutos++;
+                segundos = 0;
+            }
+            if (minutos > 60) {
+                horas++
+                minutos = 0;
+            }
+            console.log(`${horas} : ${minutos} : ${segundos} : ${milissegundos}`);
+        }, 10);
+    }
+
+    function parar() {
+        clearInterval(valor);
+        valor = 0
+    }
+</script>
