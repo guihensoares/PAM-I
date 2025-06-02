@@ -1,11 +1,21 @@
 <script>
-    let numero = '15998654321';
+    let numero = '15998654312';
+    
+    if (typeof numero == 'string') {
+        numero = numero.split("");
 
-    numero = numero.split("");
+        if (numero.length >= 11){
+            let checarNumero = 0;
 
-    numero.forEach(num => {
-        if (num.length == 11) {
-            console.log('valido!')
+            numero.forEach(element => {
+                if (numero > 9 || numero < 0) {
+                    console.log('Número inválido, não apresenta somente número!');
+
+                } else {
+                    console.log('Número válido!');
+
+                }
+            });
         }
-    });
+    }
 </script>

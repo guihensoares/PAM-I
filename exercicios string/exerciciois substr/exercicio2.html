@@ -1,5 +1,7 @@
 <script>
     let cpf = '377.888.288-00';
-    let num = cpf.substr(0,3);
+    let num = cpf.substr(0,3) + cpf.substr(4,3) + cpf.substr(8,3) + cpf.substr(12,2);
+
+    console.log(num);
     
 </script>

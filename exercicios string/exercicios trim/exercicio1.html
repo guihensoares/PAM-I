@@ -1,10 +1,11 @@
 <script>
     let string = prompt('Digite uma palavra');
-    let teste = '-' + string.trim() + '-';
 
-
-    console.log(`-${string}-`)
-
+    if (string[0] == ' ' || string[string.length-1] == ' ') {
+        console.log('O texto é inválido!');
+    } else {
+        console.log('O texto é válido!');
+    }
 
 
     </script>
