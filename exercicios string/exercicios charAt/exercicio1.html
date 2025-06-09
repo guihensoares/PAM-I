@@ -1,9 +1,10 @@
 <script>
-    let nome = prompt("Insira seu nome completo:");
+    let nomes = prompt('Quantos nomes você tem?');
 
-    for (let index = 0; index < nome.length; index++) {
+    for (let index = 1; index <= nomes; index++) {
+        let nome = prompt("Insira seu nome completo:");
         let inicial = nome.charAt(0);
-        
+
         console.log(inicial);
     }
     
