@@ -1,0 +1,93 @@
+<script>
+    const veiculos = [
+        {
+            nome: "Batmóvel",
+            ano: 2023,
+            preco: 1500000,
+            modelo: "Carro de alta performance",
+            tipoCombustivel: "Motor elétrico avançado"
+        },
+        {
+            nome: "Invisible Jet",
+            ano: 2025,
+            preco: 3000000,
+            modelo: "Avião invisível",
+            tipoCombustivel: "Jato a reação"
+        },
+        {
+            nome: "Quinjet",
+            ano: 2024,
+            preco: 5000000,
+            modelo: "Jato furtivo",
+            tipoCombustivel: "Fusão nuclear"
+        },
+        {
+            nome: "Moto do Homem-Aranha",
+            ano: 2021,
+            preco: 9000,
+            modelo: "Moto ágil",
+            tipoCombustivel: "Gasolina"
+        },
+        {
+            nome: "Batcycle",
+            ano: 2023,
+            preco: 25000,
+            modelo: "Moto de alta tecnologia",
+            tipoCombustivel: "Gasolina"
+        },
+        {
+            nome: "Tumbler",
+            ano: 2020,
+            preco: 1300000,
+            modelo: "Carro blindado",
+            tipoCombustivel: "Combustível sintético"
+        },
+        {
+            nome: "Ghost Rider’s Hellcycle",
+            ano: 1998,
+            preco: 45000,
+            modelo: "Moto infernal",
+            tipoCombustivel: "Combustível sobrenatural"
+        },
+        {
+            nome: "Green Lantern’s Space Cruiser",
+            ano: 2024,
+            preco: 7000000,
+            modelo: "Nave espacial",
+            tipoCombustivel: "Energia do anel"
+        },
+        {
+            nome: "Iron Man’s Audi R8",
+            ano: 2023,
+            preco: 220000,
+            modelo: "Supercarro esportivo",
+            tipoCombustivel: "Combustível híbrido"
+        },
+        {
+            nome: "Wonder Woman’s Chariot",
+            ano: 1990,
+            preco: 60000,
+            modelo: "Carro de guerra mitológico",
+            tipoCombustivel: "Força divina"
+        }
+    ];
+
+    let veiculos_seminovos = veiculos.filter(veiculo => veiculo.ano > 2000 && veiculo.ano <= 2023);
+    let veiculos_novos = veiculos.filter(veiculo => veiculo.ano >= 2024);
+    let veiculos_classicos = veiculos.filter(veiculo => veiculo.ano <= 2000);
+
+    let veiculo_gasolina = veiculos.filter(veiculo => veiculo.tipoCombustivel == 'Gasolina');
+    let veiculos_baixo_valor = veiculos.filter(veiculo => veiculo.preco <= 50000);
+
+    console.log(veiculos_seminovos);
+    console.log("");
+    console.log(veiculos_novos);
+    console.log("");
+    console.log(veiculos_classicos);
+    console.log("");
+    console.log(veiculo_gasolina);
+    console.log("");
+    console.log(veiculos_baixo_valor);
+    
+
+</script>
